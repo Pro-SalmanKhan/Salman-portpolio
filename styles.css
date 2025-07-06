@@ -1,0 +1,154 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8fafd;
+    color: #222;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.hero {
+    background: linear-gradient(120deg, #0f9d58 0%, #4285f4 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 0 40px 0;
+}
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0f9d58;
+}
+h3 {
+    color: #4285f4;
+    margin-bottom: 10px;
+}
+section {
+    margin-bottom: 40px;
+}
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 25px;
+    flex: 1 1 220px;
+    min-width: 220px;
+    max-width: 260px;
+    text-align: center;
+}
+.portfolio-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 20px;
+    min-width: 220px;
+    max-width: 260px;
+    text-align: center;
+}
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.testimonial-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.testimonial {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 220px;
+    max-width: 320px;
+    text-align: center;
+    color: #222;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+}
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#contact-form button {
+    background: #0f9d58;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#contact-form button:hover {
+    background: #4285f4;
+}
+.social-links {
+    text-align: center;
+    margin-top: 10px;
+}
+.social-links a {
+    color: #4285f4;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #0f9d58;
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width: 800px) {
+    .services-list, .portfolio-list, .testimonial-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container {
+        padding: 20px 0;
+    }
+} 
